@@ -258,6 +258,12 @@ input[type="submit"] {
   flex-wrap: nowrap;
 }
 
+.theme_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* SVG */
 
 svg {
