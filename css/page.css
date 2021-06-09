@@ -1,0 +1,53 @@
+/* TOP PAGE
+--------------------------------------------------------------------------------- */
+
+.top_page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto minmax(auto, var(--theme_main_column_width)) auto;
+  grid-template-areas: ". title ";
+}
+
+.img_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -10;
+  filter: saturate(40%);
+}
+
+.title {
+  grid-area: title;
+  display: block;
+  align-self: center;
+  justify-self: center;
+  padding: 10px 20px;
+  font-size: var(--page_title_font_size);
+  font-weight: lighter;
+  text-shadow: 0 0 4px #00000033;
+  text-transform: capitalize;
+  color: var(--theme_primary_color);
+  border: 4px solid var(--theme_primary_color);
+  backdrop-filter: blur(10px);
+}
+
+/* MAIN
+  --------------------------------------------------------------------------------- */
+
+.container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--theme_main_column_width);
+  margin: 0 auto;
+  background-color: var(--theme_bg_color);
+}
