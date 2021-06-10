@@ -43,11 +43,9 @@
 
 .container {
   position: relative;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto minmax(auto, var(--theme_main_column_width)) auto;
+  grid-template-areas: ". page .";
   width: 100%;
-  max-width: var(--theme_main_column_width);
-  margin: 0 auto;
   background-color: var(--theme_bg_color);
 }

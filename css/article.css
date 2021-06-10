@@ -3,6 +3,7 @@
 
 .article_container,
 article {
+  grid-area: page;
   display: flex;
   flex-direction: column;
   gap: 20px;

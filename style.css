@@ -266,7 +266,7 @@ input[type="submit"] {
 
 /* SVG */
 
-svg {
+.flex_svg svg {
   display: block !important;
   margin: 0 auto !important;
   width: var(--svg_size) !important;
@@ -274,6 +274,6 @@ svg {
   color: var(--theme_primary_color) !important;
 }
 
-svg path {
+.flex_svg svg path {
   fill: currentColor;
 }
