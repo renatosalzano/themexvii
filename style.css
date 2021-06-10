@@ -264,14 +264,12 @@ input[type="submit"] {
   justify-content: center;
 }
 
-/* SVG */
-
 .flex_svg svg {
-  display: block !important;
-  margin: 0 auto !important;
-  width: var(--svg_size) !important;
-  height: var(--svg_size) !important;
-  color: var(--theme_primary_color) !important;
+  display: block;
+  margin: 0 auto;
+  width: var(--svg_size);
+  height: var(--svg_size);
+  color: var(--theme_primary_color);
 }
 
 .flex_svg svg path {
