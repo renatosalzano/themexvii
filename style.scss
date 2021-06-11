@@ -14,6 +14,7 @@ Text Domain: themexvii
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
 /* =WordPress Core
 -------------------------------------------------------------- */
 .alignnone {
@@ -59,8 +60,7 @@ a img.aligncenter {
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
-  max-width: 96%;
-  /* Image does not overflow the content area */
+  max-width: 96%; /* Image does not overflow the content area */
   padding: 5px 3px 10px;
   text-align: center;
 }
@@ -97,23 +97,20 @@ a img.aligncenter {
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute !important;
   width: 1px;
-  word-wrap: normal !important;
-  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+  word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
   background-color: #eee;
   clip: auto !important;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   color: #444;
   display: block;
   font-size: 1em;
@@ -129,21 +126,15 @@ a img.aligncenter {
 }
 
 .wp-block-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px !important;
 }
 
 * {
   padding: 0;
   margin: 0 !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Helvetica Neue", Arial, sans-serif;
   list-style-type: none;
 }
@@ -180,27 +171,27 @@ img {
 
 .layout {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   min-height: 100%;
+
   --theme_main_column_width: 1024px;
+
   --header_font_size: 24px;
   --header_bg_color: #2e2e2e9d;
   --header_nav_display: block;
   --header_menu_button_display: none;
   --header_padding: 10px;
+
   --page_title_font_size: 60px;
   --article_title_font_size: 32px;
   --article_h2_font_size: 28px;
   --article_h3_font_size: 24px;
   --article_h4_font_size: 20px;
+
   --svg_size: 128px;
+
   --nav_link_font_size: 22px;
   --nav_link_color: #cfcfcf;
   z-index: 100000;
@@ -214,8 +205,7 @@ img {
   height: 100%;
   z-index: -100;
   background-color: var(--theme_bg_color);
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
+  filter: brightness(90%);
 }
 
 hr {
@@ -225,23 +215,16 @@ hr {
 
 /*  FORM
 -------------------------------------------------------------------------------------------------------------------------------------- */
+
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px;
   width: 100%;
   padding: 20px;
 }
-
 input,
 textarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   background-color: #0000000e;
@@ -252,13 +235,8 @@ textarea {
 }
 
 label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 6px;
   font-weight: bold;
 }
@@ -269,9 +247,7 @@ textarea:focus {
 }
 
 input[type="submit"] {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 5px;
   background-color: var(--theme_primary_color);
 }
@@ -286,24 +262,14 @@ button {
 }
 
 .theme_columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .theme_column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ._svg svg {
@@ -317,4 +283,3 @@ button {
 ._svg path {
   fill: currentColor;
 }
-/*# sourceMappingURL=style.css.map */
