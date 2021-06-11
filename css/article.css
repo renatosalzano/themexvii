@@ -15,7 +15,9 @@ article {
   color: var(--theme_primary_color);
 }
 
-article p {
+article p,
+article span,
+article div::before {
   color: var(--theme_text_color);
 }
 

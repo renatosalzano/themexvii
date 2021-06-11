@@ -156,7 +156,6 @@ a {
 
 html,
 body {
-  display: f;
   width: 100%;
   overflow: auto;
 }
@@ -253,6 +252,15 @@ input[type="submit"] {
   background-color: var(--theme_primary_color);
 }
 
+button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: var(--theme_primary_color);
+}
+
 .theme_columns {
   display: flex;
   flex-wrap: nowrap;
@@ -264,7 +272,7 @@ input[type="submit"] {
   justify-content: center;
 }
 
-.flex_svg svg {
+._svg svg {
   display: block;
   margin: 0 auto;
   width: var(--svg_size);
@@ -272,6 +280,6 @@ input[type="submit"] {
   color: var(--theme_primary_color);
 }
 
-.flex_svg svg path {
+._svg path {
   fill: currentColor;
 }
