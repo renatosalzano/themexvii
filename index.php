@@ -7,7 +7,7 @@
         style="background-image: url(<?php echo header_image() ?>);">
     </div>
 
-    <h1 class='title'><?php the_title_attribute(); ?></h1>
+    <h1 class='title'><?php single_post_title(); ?></h1>
 </div>
     
 <main class="container">
