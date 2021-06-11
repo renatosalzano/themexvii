@@ -306,7 +306,7 @@ button {
           justify-content: center;
 }
 
-._svg svg {
+._svg {
   display: block;
   margin: 0 auto;
   width: var(--svg_size);
