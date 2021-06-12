@@ -102,7 +102,7 @@ function customize_color($wp_customize) {
     $wp_customize->add_control( 
         new WP_Customize_Color_Control( $wp_customize, 
         'custom_primary_color_control', array(
-            'label' => __('Primary Color' ),
+            'label' => __('Primary Color', 'themexvii' ),
             'section' => 'colors',
             'settings' => 'custom_primary_color',
         )));
@@ -118,7 +118,7 @@ function customize_color($wp_customize) {
     $wp_customize->add_control( 
         new WP_Customize_Color_Control( $wp_customize, 
         'custom_bg_color_control', array(
-            'label' => __('Background Color' ),
+            'label' => __('Background Color', 'themexvii'  ),
             'section' => 'colors',
             'settings' => 'custom_bg_color',
         )));
@@ -133,7 +133,7 @@ function customize_color($wp_customize) {
 
     $wp_customize->add_control('header_bg_color', array(
             'type' => 'radio',
-            'label' => __('Header Background Color'),
+            'label' => __('Header Background Color', 'themexvii' ),
             'section' => 'colors',
             'priority' => 10,
             'choices' => array(
@@ -152,7 +152,7 @@ function customize_color($wp_customize) {
     $wp_customize->add_control( 
         new WP_Customize_Color_Control( $wp_customize, 
         'nav_link_color_control', array(
-            'label' => __('Nav Link Color (desktop)' ),
+            'label' => __('Nav Link Color (desktop)', 'themexvii' ),
             'section' => 'colors',
             'settings' => 'nav_link_color',
         )));
@@ -167,7 +167,7 @@ function customize_color($wp_customize) {
     $wp_customize->add_control( 
         new WP_Customize_Color_Control( $wp_customize, 
         'text_font_color_control', array(
-            'label' => __('Text Color' ),
+            'label' => __('Text Color', 'themexvii' ),
             'section' => 'colors',
             'settings' => 'text_color',
         )));
@@ -182,7 +182,7 @@ function customize_color($wp_customize) {
     $wp_customize->add_control( 
         new WP_Customize_Color_Control( $wp_customize, 
         'menu_text_color_control', array(
-            'label' => __('Menu Text Color (mobile)' ),
+            'label' => __('Menu Text Color (mobile)', 'themexvii' ),
             'section' => 'colors',
             'settings' => 'menu_text_color',
         )));
@@ -197,7 +197,7 @@ function customize_color($wp_customize) {
     $wp_customize->add_control( 
         new WP_Customize_Color_Control( $wp_customize, 
         'foooter_text_color_control', array(
-            'label' => __('Footer Text Color' ),
+            'label' => __('Footer Text Color', 'themexvii' ),
             'section' => 'colors',
             'settings' => 'footer_text_color',
         )));
